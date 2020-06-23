@@ -1,0 +1,25 @@
+{
+    "name": "mobius",
+    "displayName": "mobius",
+    "description": "Syntax highlighting for mobius",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mobius",
+            "aliases": ["Mobius", "mobius"],
+            "extensions": [".mobius"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mobius",
+            "scopeName": "source.mobius",
+            "path": "./syntaxes/mobius.tmLanguage.json"
+        }]
+    }
+}
