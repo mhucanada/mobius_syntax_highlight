@@ -7,23 +7,60 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#constants"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.mobius",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(while|for|return)\\b"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.double.mobius",
-			"begin": "\"",
-			"end": "\"",
+		"strings":{
 			"patterns": [
 				{
-					"name": "constant.character.escape.mobius",
-					"match": "\\\\."
+				"name":"string.quoted.single.mobius",
+				"begin": "'",
+				"end": "'"
+				},
+				{
+				"name":"string.quoted.double.mobius",
+				"begin": "\"",
+				"end": "\""
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+				"name": "comment.line.number-sign.mobius",
+				"begin": "#",
+				"end": "\n"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+				"name": "support.function.mobius",
+				"match": "\\b(?i)(condition|eq|ge|le|ne|fact|frac|gcd|gt|lt|if|indexof|java|lsu|maple|mathml|max|min|not|numfmt|plotmaple|rand|range|rint|rank|int|sig|sin|cos|tan|arcsin|arccos|arctan|csc|sec|cot|hypsin|hypcos|hyptan|archypsin|archypcos|archyptan|abs|sqrt|log|ln|exp|binomial|erf|inverf|invstudentst|students|strcat|sum|switch)\\b"
+				}
+			]	
+		},
+		"constants": {
+			"patterns": [
+				{
+				"name": "constant.numeric",
+				"match": "[0-9]"
 				}
 			]
 		}
