@@ -52,7 +52,7 @@
 			"patterns": [
 				{
 				"name": "support.function.mobius",
-				"match": "\\b(?i)(condition|eq|ge|le|ne|fact|frac|gcd|gt|lt|if|indexof|java|lsu|maple|mathml|max|min|not|numfmt|plotmaple|rand|range|rint|rank|int|sig|sin|cos|tan|arcsin|arccos|arctan|csc|sec|cot|hypsin|hypcos|hyptan|archypsin|archypcos|archyptan|abs|sqrt|log|ln|exp|binomial|erf|inverf|invstudentst|students|strcat|sum|switch)\\b"
+				"match": "\\b(?i)(decimal|condition|eq|ge|le|ne|fact|frac|gcd|gt|lt|if|indexof|java|lsu|maple|mathml|max|min|not|numfmt|plotmaple|rand|range|rint|rank|int|sig|sin|cos|tan|arcsin|arccos|arctan|csc|sec|cot|hypsin|hypcos|hyptan|archypsin|archypcos|archyptan|abs|sqrt|log|ln|exp|binomial|erf|inverf|invstudentst|students|strcat|sum|switch)\\b"
 				}
 			]	
 		},
